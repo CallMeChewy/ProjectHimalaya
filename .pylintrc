@@ -1,0 +1,25 @@
+[MASTER]
+# Path to the custom plugin
+init-hook='import sys; sys.path.append("PylintPlugins")'
+load-plugins=PylintPlugins.AIdevChecker
+
+[MESSAGES CONTROL]
+# Enable the custom checks
+enable=pascal-case-variable,pascal-case-function,pascal-case-method,special-term-capitalization
+
+# Disable some default checks that conflict with our standards
+disable=invalid-name,C0103
+
+[FORMAT]
+# Maximum line length
+max-line-length=100
+
+[REPORTS]
+# Set the output format
+output-format=colorized
+
+# Activate the evaluation score
+evaluation=10.0 - ((float(5 * error + warning + refactor + convention) / statement) * 10)
+
+# Set the output to show column numbers
+msg-template={path}:{line}:{column}: {msg_id}: {msg} ({symbol})

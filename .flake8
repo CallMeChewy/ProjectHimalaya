@@ -1,0 +1,5 @@
+[flake8]
+max-line-length = 100
+exclude = .git,__pycache__,build,dist,venv
+# We're using our custom naming convention, so ignore name-related errors
+ignore = E501, W503, N802, N803, N806

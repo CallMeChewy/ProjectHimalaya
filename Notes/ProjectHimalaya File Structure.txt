@@ -1,0 +1,21 @@
+ProjectHimalaya/
+├── Applications/
+│   └── OllamaModelEditor/
+│       ├── Core/                     # Core application functionality
+│       ├── GUI/                      # GUI components 
+│       ├── Tests/                    # Application-specific tests
+│       ├── Main.py                   # Application entry point
+│       └── README.md                 # Application documentation
+├── Framework/
+│   ├── Knowledge/                    # Knowledge management tools
+│   ├── Standards/                    # Standards enforcement
+│   └── TaskPackages/                 # Task package templates
+├── KnowledgeDatabase/                # Your existing knowledge documents
+├── PylintPlugins/                    # Keep existing linting plugins
+├── Scripts/                          # Project-wide scripts
+├── Tools/
+│   ├── AIdevLinting/                 # Move linting system here
+│   └── DocumentGenerator/            # Future documentation tools
+├── README.md
+├── requirements.txt
+└── SetupLinting.py                   # Eventually move under Tools
